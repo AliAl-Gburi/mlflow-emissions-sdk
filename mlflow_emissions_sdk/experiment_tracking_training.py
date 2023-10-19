@@ -51,7 +51,7 @@ class EmissionsTrackerMlflow:
         for test_d, actual in test_data:
             predicted = model.predict(test_d)
 
-            if predicted == test_d:
+            if predicted == actual:
                 correctpred += 1
         acc = correctpred/testlen
         client = MlflowClient(tracking_uri=self.experiment_tracking_params['tracking_uri'])
