@@ -1,0 +1,8 @@
+setup.py
+mlflow_emissions_sdk/__init__.py
+mlflow_emissions_sdk/experiment_tracking_training.py
+mlflow_emissions_sdk.egg-info/PKG-INFO
+mlflow_emissions_sdk.egg-info/SOURCES.txt
+mlflow_emissions_sdk.egg-info/dependency_links.txt
+mlflow_emissions_sdk.egg-info/requires.txt
+mlflow_emissions_sdk.egg-info/top_level.txt

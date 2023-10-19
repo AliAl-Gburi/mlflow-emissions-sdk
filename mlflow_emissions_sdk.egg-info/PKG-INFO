@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: mlflow-emissions-sdk
+Version: 0.5
+Summary: tracks carbon emissions and logs it to mlfow
+Requires-Dist: codecarbon
+Requires-Dist: mlflow
