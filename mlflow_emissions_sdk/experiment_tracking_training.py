@@ -37,13 +37,12 @@ class EmissionsTrackerMlflow:
        
         
 
-    def end_training_job(self, model):
+    def end_training_job(self):
         client = MlflowClient(tracking_uri=self.experiment_tracking_params['tracking_uri'])
         emissions = self.emissions_tracker.stop()
         client.log_metric(self.run_id, "emissions", emissions)
         self.emissions = emissions
-        #for k, v in dict(model.get_params()).items():
-        #    client.log_param(self.run_id, k, v)
+        
 
     def accuracy_per_emission(self, model, test_data):
         testlen = len(test_data)
