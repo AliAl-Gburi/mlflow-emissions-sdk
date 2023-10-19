@@ -11,5 +11,6 @@ setup(
     version='0.6',
     packages=['mlflow_emissions_sdk'],
     description='tracks carbon emissions and logs it to mlfow',
-    install_requires=requirements
+    install_requires=requirements,
+    license='MIT'
 )
